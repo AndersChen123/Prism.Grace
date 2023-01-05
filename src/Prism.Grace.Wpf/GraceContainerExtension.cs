@@ -185,7 +185,7 @@ namespace Prism.Grace
         /// <returns>The <see cref="IContainerRegistry" /> instance</returns>
         public IContainerRegistry Register(Type from, Type to)
         {
-            Instance.Configure(c => c.Export(to).As(from).Lifestyle.SingletonPerRequest());
+            Instance.Configure(c => c.Export(to).As(from));
             return this;
         }
 
@@ -198,7 +198,7 @@ namespace Prism.Grace
         /// <returns>The <see cref="IContainerRegistry" /> instance</returns>
         public IContainerRegistry Register(Type from, Type to, string name)
         {
-            Instance.Configure(c => c.Export(to).AsKeyed(from, name).Lifestyle.SingletonPerRequest());
+            Instance.Configure(c => c.Export(to).AsKeyed(from, name));
             return this;
         }
 
