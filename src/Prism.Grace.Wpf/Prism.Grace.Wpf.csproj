@@ -4,7 +4,7 @@
     <TargetFrameworks>net47;net5.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <RootNamespace>Prism.Grace</RootNamespace>
-    <PackageId>Prism.Grace.Wpf</PackageId>
+    <PackageId>PrismGrace.Wpf</PackageId>
 	  <LangVersion>10.0</LangVersion>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Title>Prism.Grace.Wpf</Title>
